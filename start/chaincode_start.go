@@ -99,7 +99,7 @@ func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string)
 
 //read is to call GetState
 func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) ([]byte,error){
-         var key,jsonRespstring
+         var key, jsonResp string
          var err error
 
          if len(args) !=1 {
